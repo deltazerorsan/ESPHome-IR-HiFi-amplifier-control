@@ -1,3 +1,5 @@
+![](deltazero1.bmp)
+
 # ESPHome-IR-amplifier-control
 The goal is to remote control the volume, an standard knob managing a potenciometer, and also switch the HiFi amplifier on and off.
 
