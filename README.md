@@ -1,19 +1,19 @@
 # ESPHome-IR-amplifier-control
-The goal is to remote control the volume, an standard knob managing a potenciometer, and also switch the apliance on and off.
+The goal is to remote control the volume, an standard knob managing a potenciometer, and also switch the HiFi amplifier on and off.
 
 The project is based on an ESP32 and ESPHome, to receive and decode de IR from and Apple remote control from a Mac Mini. It can use any remote with a few minor adjustements.
 
-For the ON/OFF the projet uses an Shelly Plug S managed via web from Node-RED. One of the keys of the remote is decoded and tiggers an MQTT mesage that Node-RED can capture and convert to a relay toggle order for the Shelly Plug. Of course any other smart plug cna be used if it accepts commands via web.
+For the ON/OFF the projet uses an Shelly Plug S managed via web from Node-RED. One of the keys of the remote is decoded and tiggers an MQTT mesage that Node-RED can capture and convert to a relay toggle order for the Shelly Plug. Of course any other smart plug can be used if it accepts commands via web.
 
 So, the project needs:
 
-- TSOP 38238 to receive infrared signals
-- ESP-WROOM-32 module
-- 360 degres small servo
+- TSOP38238 to receive infrared signals
+- ESP-WROOM-32 module (or any board with similar module)
+- 360 degres small servo (not a standar one, but 360 degres)
 - Apropiate belt
 - some 3.3 power source
   - 5 volts to 3.3 converter (it can be onboard)
-  - Wall 5 volts power supply
+  - Wall 5 volts power supply (or somethig equivalent)
 - Some smart plug like Shelly Plug S or similar
 
 Infraestructure:
