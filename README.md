@@ -1,7 +1,7 @@
 ![](images/ESPHome-IR-amplifier-control.jpg)
 
 # ESPHome-IR-amplifier-control
-The goal is to remote control the volume, an standard knob managing a potenciometer, and also switch the HiFi amplifier on and off.
+The goal is to remote control the volume, a standard knob managing a potenciometer, and also switch the HiFi amplifier on and off.
 
 The project is based on an ESP32 and ESPHome, to receive and decode the IR from a remote control. It can use any remote with a few minor adjustements.
 
@@ -15,7 +15,7 @@ So, the project needs:
 - Apropiate belt
 - some 3.3 power source
   - 5 volts to 3.3 converter (it can be onboard)
-  - Wall 5 volts power supply (or somethig equivalent)
+  - Wall 5 volts power supply (or something equivalent)
 - Any smart plug like Shelly Plug S or similar
 
 Infraestructure:
