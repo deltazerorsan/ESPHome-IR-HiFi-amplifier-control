@@ -24,6 +24,4 @@ Infrastructure:
 - ESPHome running (in my case Hassio version)
 - Node-RED running (in my case Hassio version)
 
-
-
-<center> ![](images/deltazero1.bmp) </center>
+![](images/deltazero1.bmp)
