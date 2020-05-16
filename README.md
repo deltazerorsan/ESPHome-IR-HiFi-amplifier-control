@@ -1,4 +1,5 @@
 ![](images/ESPHome-IR-amplifier-control.jpg)
+The servo and the board are fixed with double sided tape, so everything is removable.
 
 # ESPHome-IR-amplifier-control
 The goal is to remote control the volume, a standard knob managing a potentiometer, and also switch the HiFi amplifier on and off.
