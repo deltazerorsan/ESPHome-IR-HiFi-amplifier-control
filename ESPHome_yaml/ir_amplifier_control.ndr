@@ -1,0 +1,76 @@
+[
+    {
+        "id": "dc263ebb.bb1be",
+        "type": "mqtt in",
+        "z": "eadd7b0a.0cca78",
+        "name": "Amplificador por IR",
+        "topic": "Amplificador/SW1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "72bede6f.a1d6b",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "c5806558.8d94e8"
+            ]
+        ]
+    },
+    {
+        "id": "b58fe5b6.654428",
+        "type": "debug",
+        "z": "eadd7b0a.0cca78",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 650,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c5806558.8d94e8",
+        "type": "http request",
+        "z": "eadd7b0a.0cca78",
+        "name": "Ampli TOGGLE",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://192.168.1.36/relay/0?turn=toggle",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "b58fe5b6.654428"
+            ]
+        ]
+    },
+    {
+        "id": "72bede6f.a1d6b",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "MQTT en la 8",
+        "broker": "192.168.1.8",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
