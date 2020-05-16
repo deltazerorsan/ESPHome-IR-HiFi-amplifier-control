@@ -26,4 +26,4 @@ Infrastructure:
 
 
 
-![](images/deltazero1.bmp)
+<center> ![](images/deltazero1.bmp) </center>
